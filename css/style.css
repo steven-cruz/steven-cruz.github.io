@@ -69,6 +69,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 /* Barra de navegacion */
@@ -96,6 +97,7 @@ nav a:hover{
     margin-left: 3%;
 }
 .name{
+    margin-bottom: 0;
     padding-bottom: 2%;
     margin-left: 2%;
 }
@@ -103,6 +105,10 @@ nav a:hover{
 /* ====================================
     section About me    */
 #about-me{
+    background-color: linear-gradient(
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 0.192)
+    );
     color: rgba(255, 255, 255, 0.87);
 }
 
@@ -257,22 +263,22 @@ nav a:hover{
 
 .input-contact{
     width: 100%;
-    background-color: rgba(48, 48, 48, 0.144);
-    border: 1px rgba(145, 145, 145, 0.815) solid;
+    background-color: rgb(136, 136, 136);
+    border: 1px rgba(54, 54, 54, 0.37) solid;
     border-radius: 6px;
 }
 
 /* ====================================
     section Contact Me   */
 textarea:focus, input:focus, input[type]:focus {
-    border-color: rgba(255, 0, 0, 0.192);
-    box-shadow: 0 3px 3px rgba(235, 128, 128, 0.226)inset, 0 0 8px rgba(255, 150, 150, 0.562);
+    border: 1px rgba(54, 54, 54, 0.37) solid;
+    border-color: rgba(0, 183, 255, 0.192);
+    box-shadow: 0 3px 3px rgba(128, 210, 235, 0.226)inset, 0 0 8px rgba(150, 243, 255, 0.562);
     outline: 0 none;
 }
 
     /* Text-area Scroll Hidden */
 .scroll-hidden{
-    background-color: transparent;
     overflow-y: scroll; /* Add the ability to scroll */
 }
 
