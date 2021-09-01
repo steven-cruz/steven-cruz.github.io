@@ -1,0 +1,1 @@
+console.log("El archivo de Js esta linqueado")

@@ -13,6 +13,9 @@
     href="../fonts/berkshire-swash-fontfacekit/web fonts/berkshireswash_regular_macroman/stylesheet.css" type="text/css"
     charset="utf-8" />
 
+  <!-- Js for Form -->
+  <script src="./js/form.js"></script>
+
   <!-- Bootstrap 4 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -308,16 +311,21 @@
             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="col-sm-12 col-md-6">
-          <form class="form-card" method="POST" action="enviar">
+          <form class="form-card" action="https://formsubmit.co/stevencruz.300008@gmail.com" method="POST">
             <h1 class="title red-card">Send a message</h1>
-            <label class="title h4 mt-4" for="#">Name</label><br>
-            <input class="input-contact" type="text" required><br>
-            <label class="mt-4 title h4" for="#">E-Mail</label><br>
-            <input class="input-contact" type="email" required><br>
-            <label class="mt-4 title h4" for="#">Subject</label><br>
-            <input class="input-contact" type="text" required><br>
-            <label class="mt-4 title h4" for="#">Message</label>
-            <textarea class="input-contact scroll-hidden" name="message" id="message" rows="4" required></textarea>
+
+            <label class="title h4 mt-4">Name</label><br>
+            <input class="input-contact" name="nombre" type="text" required><br>
+
+            <label class="mt-4 title h4">E-Mail</label><br>
+            <input class="input-contact" name="email" type="email" required><br>
+
+            <label class="mt-4 title h4">Subject</label><br>
+            <input class="input-contact" name="asunto" type="text" required><br>
+ 
+            <label class="mt-4 title h4">Message</label>
+            <textarea class="input-contact scroll-hidden" name="message" id="message" rows="4" type="text" required></textarea>
+
             <button type="submit" class="general-btn title">Submit</button>
           </form>
         </div>
